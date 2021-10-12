@@ -10,7 +10,7 @@ for (var i = 0; i < iconImage.length; i++) {
       switch (this.num) {
          case 0:
 
-            this.src = '../images/index/LogoIcon/會員中心02.png';
+            this.src = '../images/index/LogoIcon/memberTwo.png';
             break;
          case 1:
             this.src = '../images/index/LogoIcon/常見問題02.png';
@@ -30,7 +30,7 @@ for (var i = 0; i < iconImage.length; i++) {
       switch (this.num) {
          case 0:
 
-            this.src = '../images/index/LogoIcon/會員中心01.png';
+            this.src = '../images/index/LogoIcon/memberOne.png';
             break;
          case 1:
             this.src = '../images/index/LogoIcon/常見問題01.png';
