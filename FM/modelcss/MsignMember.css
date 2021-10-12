@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", "Noto Serif TC", serif !important;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/index/member-bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#memberContent {
+  width: 630px;
+  height: 770px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.mSpan {
+  display: inline-block;
+  padding: 15px 0 0px 31px;
+  font-size: 23px;
+  color: #585858;
+}
+
+.mheaderLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mheaderLogo a {
+  outline-color: #ebc179;
+}
+
+.MlogoImg {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/index/LogoIcon/Mlogo.png");
+}
+
+.MlogoImg:hover {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/index/LogoIcon/logo-b.png");
+}
+
+.MlogoImg:focus {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/index/LogoIcon/logo-b.png");
+  outline: none;
+}
+
+.logoArea a {
+  outline: none;
+}
+
+.logoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.fbLogo {
+  position: relative;
+  background: none;
+  background-color: #3a60d0;
+  border: 0;
+  border-radius: 9px;
+  width: 397px;
+  height: 67px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.googleLogo {
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 24px;
+  background: none;
+  background-color: #e04754;
+  border: 0;
+  border-radius: 9px;
+  width: 397px;
+  height: 67px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.fbLogo:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.googleLogo:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.fbLogo:hover {
+  opacity: 0.7;
+  outline: none;
+}
+
+.googleLogo:hover {
+  opacity: 0.7;
+  outline: none;
+}
+
+.mword {
+  color: #fff;
+  font-size: 21px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.mword:hover {
+  color: #fff;
+}
+
+.fbLogo img {
+  width: 30px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.googleLogo img {
+  width: 25px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.singleW {
+  position: relative;
+  font-size: 20px;
+  color: #bcbcbc;
+}
+.singleW::before {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #bcbcbc;
+  width: 270px;
+  top: 50%;
+  right: 30px;
+}
+.singleW::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #bcbcbc;
+  width: 270px;
+  top: 50%;
+  left: 30px;
+}
+
+.mForm {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.inputContent {
+  position: relative;
+  display: flex;
+  top: 49px;
+  width: 100%;
+  justify-content: space-between;
+  left: 25px;
+}
+
+.starC {
+  color: red;
+}
+
+.inputContent label {
+  color: #585858;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #bcbcbc;
+  border-radius: 2px;
+  width: 267px;
+  height: 49px;
+  margin-top: 16px;
+  margin-right: 50px;
+  background: none;
+  display: block;
+  outline: none;
+  font-size: 18px;
+  color: #585858;
+  padding: 10px;
+}
+
+.checkStyle {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #818181;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkContent {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-bottom: 35px;
+}
+
+.checkContent label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78px;
+  font-size: 18px;
+  color: #585858;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.checkInStyle {
+  width: 11px;
+  height: 11px;
+  background-color: #f0cc8f;
+  display: none;
+}
+
+input[type="checkbox"]:checked + label .checkInStyle {
+  display: inline-block;
+}
+
+.BottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mForm button {
+  width: 580px;
+  height: 50px;
+  background-color: #ebc179;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.mForm button:hover {
+  opacity: 0.7;
+}
+
+.mForm button:focus {
+  border: 0;
+  outline: none;
+  opacity: 0.7;
+}
+
+.bottomWord {
+  margin-top: 21px;
+  margin-left: 20px;
+}
+
+.bottomWord a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ebc179;
+  letter-spacing: 1px;
+}
+.bottomWord span {
+  font-size: 18px;
+  color: #585858;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+
+.mForm button{
+
+  width: 590px;
+  height: 50px;
+  background-color: #ebc179;
+  border:1px solid transparent;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 20px;
+
+}

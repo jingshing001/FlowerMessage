@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="boot/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="modelcss/mousefollow.css">
+    <link rel="stylesheet" href="modelcss/cartModel-cartlistconfirm.css">
+    <title>01 購物清單確認</title>
+</head>
+
+<body>
+
+    <!-- 中間所有內容 -->
+    <section id="allContent">
+        <!-- 遮罩 -->
+        <div id="mask"></div>
+        <!-- logo側邊置頂 -->
+        <section id="navlogo">
+            <ul class="navContent" id="navContent">
+                <a href="flower.html">
+                    <img id="logo" src="images/index/LogoIcon/logo-b.png" alt="logo">
+                </a>
+            </ul>
+        </section>
+        <!-- 頂部三大步驟 -->
+        <section id="index">
+            <ul>
+                <li class="chitem">
+                    <span class="indexNum">01</span>
+                    <span class="indexText">購物清單確認</span>
+                </li>
+                <li>
+                    <span class="indexNum">02</span>
+                    <span class="indexText">確認購買與付款方式</span>
+                </li>
+                <li>
+                    <span class="indexNum">03</span>
+                    <span class="indexText">完成訂單</span>
+                </li>
+            </ul>
+        </section>
+        <!-- 購物清單確認的內容 -->
+        <section id="cartlistconfirm">
+            <table>
+                <tr>
+                    <th>購物清單確認</th>
+                    <th></th>
+                    <th>數量</th>
+                    <th>單價</th>
+                    <th>小計</th>
+                    <th>刪除</th>
+                </tr>
+                <tr>
+                    <td><img src="images/index/product-img/f-congratulations01.jpg" alt=""></td>
+                    <td>
+                        <ul>
+                            <li>每周鮮花</li>
+                            <li>混合系列</li>
+                            <li>開始配送週：2021-06-21</li>
+                        </ul>
+                    </td>
+                    <td><span class="borderbtn"><input type="number" class="numbtn" value="2" min="1"
+                                id="product01"></span>
+                    </td>
+                    <td>NT$ 480</td>
+                    <td>NT$ <span id="result01"></span></td>
+                    <td>
+                        <div class="trashpic deleteBtn"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="images/index/product-img/f-congratulations02.jpg" alt=""></td>
+                    <td>
+                        <ul>
+                            <li>主題花束</li>
+                            <li>畢業快樂</li>
+                            <li>開始配送週：2021-06-21</li>
+                        </ul>
+                    </td>
+                    <td><span class="borderbtn"><input type="number" class="numbtn" value="1" min="1"
+                                id="product02"></span>
+                    </td>
+                    <td>NT$ 680</td>
+                    <td>NT$ <span id="result02"></span></td>
+                    <td>
+                        <div class="trashpic deleteBtn"></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="sum">共三件 / 商品金額統計：<span>NT$ <span id="result03"></span></div>
+            <div class="nextbtn">
+                <a href="flower.html"><button>繼續購物</button></a>
+                <a href="cartModel-confirmpay.html"><button autofocus>下一步</button></a>
+            </div>
+        </section>
+        <!-- 分隔線 -->
+        <section id="separate">
+            <div class="line"></div>
+        </section>
+        <!-- 底部聯絡資訊 -->
+        <section id="footerinfo">
+            <p>(MON-FRI) 10:00 - 18:00</p>
+            <p>TEL : (02)2995-9996</p>
+            <p>flowermessenger@gmail.com</p>
+            <br><br><br>
+            <p>Copyright © Flower Messenger All Rights Reserved.</p>
+        </section>
+    </section>
+    <!-- 刪除確認彈窗 -->
+    <section id="deleteAlert" class="hidden">
+        <div id="deleteConfirm">
+            <div>確定刪除商品嗎 ？ Σ(❛ ロ ❛ |||)</div>
+            <div>
+                <button id="retu">取消</button>
+                <button id="yes">確定</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="js/cartModel-cartlistconfirm.js"></script>
+
+</html>
