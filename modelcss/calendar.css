@@ -1,0 +1,67 @@
+#calendar {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1220px;
+    height: 646px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+#calendar table tr th {
+    height: 90px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#calendar table tr td {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    color: #d2d2d2;
+    font-size: 20px;
+    cursor: default;
+}
+
+#calendar table tr td span {
+    border: 2.5px solid #d29d7c;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#calendar table tr td span:hover {
+    border: 2.5px solid #d29d7c;
+    border-radius: 2px;
+    background-color: #d29d7c;
+    color: #FFF;
+}
+
+#calendar table:last-child {
+    margin-left: 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.mask {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}

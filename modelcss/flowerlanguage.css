@@ -1,0 +1,109 @@
+/* 頂部內容區 */
+
+.flbox1{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.flbox2{
+    position: absolute;
+    width: 740px;
+    height: 580px;
+    top: 360px;
+    left: 245px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 2;
+    text-align: center;
+    color: #FFF;
+}
+
+.fltit{
+    font-size: 45px;
+    margin-top: 70px;
+    letter-spacing: 3px;
+}
+
+.flcontent{
+    font-size: 23px;
+    white-space: pre-line;
+    margin-top: 60px;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+
+.flbox3{
+    background-color:var(--flBox1) ;
+    position: absolute;
+    width: 810px;
+    height: 540px;
+    top: 589px;
+    left: 730px;
+    z-index: -1;
+}
+
+/* 中間輪播圖內容區 */
+#flcontent{
+    margin-top: 500px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.swiper-slide {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006); */
+    overflow: hidden;
+}
+
+.swiper-slide:nth-child(7n-6) {
+    background-image: url(../images/index/f-meaning/f-maening01.jpg);
+}
+.swiper-slide:nth-child(7n-5) {
+    background-image: url(../images/index/f-meaning/f-maening02.jpg);
+}
+.swiper-slide:nth-child(7n-4) {
+    background-image: url(../images/index/f-meaning/f-maening03.jpg);
+}
+.swiper-slide:nth-child(7n-3) {
+    background-image: url(../images/index/f-meaning/f-maening04.jpg);
+}
+.swiper-slide:nth-child(7n-2) {
+    background-image: url(../images/index/f-meaning/f-maening05.jpg);
+}
+.swiper-slide:nth-child(7n-1) {
+    background-image: url(../images/index/f-meaning/f-maening06.jpg);
+}
+.swiper-slide:nth-child(7n) {
+    background-image: url(../images/index/f-meaning/f-maening07.jpg);
+}
+
+
+.flmessage {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    letter-spacing: 3px;
+    padding: 20px 20px 20px 30px;
+}
+
+.swiper-slide-active .flmessage {
+    bottom: 0;
+    transition: .5s .5s;
+    opacity: 1;
+}
+
+/* nav被選取後加左外框線 */
+
+.choose{
+    border-left: 6px solid #fbd596;
+    color: #fbd596;
+}
