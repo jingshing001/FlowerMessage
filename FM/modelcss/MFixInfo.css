@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+body {
+  font-family: "Noto Serif TC", "Playfair Display", serif !important;
+  transition: all 1.5s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 顏色設定 */
+:root {
+  --styleColor: #585858;
+  --TpnavColor: #bebebe;
+  --TpnavHover: #585858;
+}
+
+.navColor {
+  --styleColor: #fff;
+  --TpnavColor: #534778;
+  --TpnavHover: #fff;
+}
+
+/* 會員中心頂部區塊 */
+#OHeader {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.OHImg {
+  width: 60%;
+  font-size: 40px;
+  color: #585858;
+  display: flex;
+  align-items: center;
+}
+
+.OHImg img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* LOGO大小 */
+#logo1 {
+  width: 75px;
+}
+
+/*nav最外層塊 */
+#nav01 {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 10vw;
+  height: 98vh;
+  text-align: center;
+  z-index: 1000;
+  padding-top: 40px;
+}
+
+/*設定INFO */
+.starC {
+  color: #d10f0f;
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+.MInfoInput {
+  width:860px;
+  height: 320px;
+  margin-top: 80px;
+  border-bottom: 1px solid #bebebe;
+  display: flex;
+  color: #585858;
+  font-size: 18px;
+}
+
+
+::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #bcbcbc;
+  letter-spacing: 1px;
+  
+}
+
+.infoL div {
+  margin-bottom: 16px;
+}
+.infoR div {
+  margin-bottom: 16px;
+}
+
+input[type="text"]{
+  border: 1px solid #bcbcbc;
+  border-radius: 2px;
+  width: 395px;
+  height: 38px;
+  margin-right: 72px;
+  margin-top: 10px;
+  background: none;
+  display: block;
+  outline: none;
+  font-size: 18px;
+  color: #585858;
+  padding: 0px 10px;
+  line-height: 38px;
+ }
+
+ input[type="password"] {
+  border: 1px solid #bcbcbc;
+  border-radius: 2px;
+  width: 395px;
+  height: 38px;
+  margin-right: 50px;
+  margin-top: 10px;
+  background: none;
+  display: block;
+  outline: none;
+  font-size: 18px;
+  color: #585858;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  line-height: 38px;
+
+
+}
+
+
+/*變更密碼區塊*/
+ .Chpw{
+     width:850px;
+     color:#585858;
+     font-size: 18px;
+ 
+ }
+
+ .Chpw p{
+   font-size: 21px;
+   margin-top: 70px;
+   margin-bottom: -2px;
+ }
+
+ .Chpw div{
+   margin-top: 16px;
+  
+
+}
+ 
+.ChpwInput1>input[type="password"]{
+    width: 863px;
+}
+
+.ChpwInput2{
+  display: flex;
+}
+.ChpwInput2 input{
+   margin-right: 80px;
+}
+
+/*按鈕儲存修改*/
+.BottomContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.BottomContent button{
+
+  width: 580px;
+  height: 50px;
+  background-color: #ebc179;
+  border:1px solid transparent;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.BottomContent button:hover{
+  opacity: 0.7;
+
+}
+
+.BottomContent button:focus{
+  opacity: 0.7;
+
+}
+
+
+/*eyeImg*/
+.eyeArea{
+  position: relative;
+}
+
+
+.eyeImg{
+  position: absolute;
+  top:64%;
+  left:76%;
+  width:25px;
+  height:18px;
+}
+
+
+/* nav ul 塊 */
+.navContent {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 82%;
+  writing-mode: vertical-rl;
+}
+
+ul a {
+  position: relative;
+  color: var(--TpnavColor);
+  font-size: 21px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.6s;
+  letter-spacing: 2px;
+}
+
+/*nav li 設置塊*/
+.insideUl {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding-top: 50px;
+}
+.insideUl li {
+  padding: 15px;
+}
+
+.insideUl li a {
+  display: block;
+  border-top: 6px solid transparent;
+  padding-top: 3px;
+}
+
+/* 第三個不套用hover 其餘都套用 */
+.insideUl li:not(:nth-of-type(3)) a:hover {
+  transition: 1s;
+  border-top: 6px solid var(--TpnavHover);
+  color: var(--TpnavHover);
+  outline: none;
+}
+
+.insideUl li:nth-of-type(3) a {
+  color: #ebc179;
+}
+.insideUl li:nth-of-type(3) a:hover {
+  transition: all 0.1s;
+  opacity: 0.7;
+}
+
+/* 分隔線 */
+#separate {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 82px;
+  margin-bottom: 77.5px;
+}
+
+.line {
+  width: 1409px;
+  height: 0px;
+  border-top: 1px solid #585858;
+}
+
+/* 底部資訊區 */
+#footerinfo {
+  height: 273px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerinfo p {
+  font-size: 18px;
+  line-height: 35px;
+  color: #585858;
+  text-align: center;
+}

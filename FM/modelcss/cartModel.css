@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif TC', 'Playfair Display', serif !important;
+    transition: all 1.5s ease-in;
+    display: flex;
+    flex-direction: column;
+}
+
+/* logo */
+
+#logo {
+    width: 75px;
+}
+
+#navlogo {
+    position: fixed;
+    width: 10vw;
+    height: 100vh;
+    text-align: center;
+    z-index: 1000;
+    padding-top: 10px;
+}
+
+.navContent {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 65%;
+    writing-mode: vertical-rl;
+    margin-top: 8%;
+}
+
+/* 上方索引 */
+
+#index ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+
+#index ul li {
+    width: 300px;
+    border-bottom: 10px solid #BCBCBC;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: #585858;
+    cursor: default;
+}
+
+#index ul li+li {
+    margin-left: 106px;
+}
+
+#index ul li .indexNum {
+    font-size: 38px;
+}
+
+#index ul li .indexText {
+    font-size: 22px;
+    margin-left: 14px;
+}
+
+#index ul li.chitem {
+    color: #EBC179;
+    border-bottom: 10pt solid #EBC179;
+}
+
+/* 分隔線 */
+
+#separate {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    margin-bottom: 77.5px;
+}
+
+.line {
+    width: 1409px;
+    height: 0px;
+    border-top: 1px solid #585858;
+}
+
+/* 底部資訊區 */
+
+#footerinfo {
+    height: 273px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footerinfo p {
+    font-size: 18px;
+    line-height: 35px;
+    color: #585858;
+    text-align: center;
+}
+
