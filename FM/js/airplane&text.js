@@ -1,19 +1,23 @@
-// 滾軸離上方多少距離，觸發效果啟動
-let textenter = document.querySelectorAll('#aboutcontent span');
+
+let  aboutSpan = document.querySelectorAll('#aboutcontent span');
+
+//滾輪監聽
 document.addEventListener('scroll', (e) => {
    let top = document.documentElement.scrollTop;
-   if (top >= 250) {
-      for (i = 0, t = 0; i < textenter.length; i++, t += 200) {
-         // 第一格要使用引號包起來，但會將原本須帶入的變數一起包住，造成無法讀取for迴圈的i值，所以有兩種寫法
-         //第一種："textenter["+i+"].classList.add('textenter')"
-         //第二種用ES6的模板字串符 template literal，如下：
-         setTimeout(`textenter[${i}].classList.add('textenter')`, t);
-      }
+   if (top >600) {
+         let timer=0;
+      aboutSpan.forEach((v)=>{ 
+         timer+=200;
+           setTimeout(()=>{
+            v.classList.add('textenter')
+           console.log(timer)
+           },timer)
+         })
+
       imgplane01.classList.add('flyeff01');
       imgplane02.classList.add('flyeff02');
    }
 })
-
 
 // 按鈕點擊後，主題色彩、LOGO、按鈕顏色產生變化
 const checkbox = document.getElementById('checkbox');
