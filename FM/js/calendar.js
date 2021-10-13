@@ -5,18 +5,23 @@ let mask = document.getElementById('mask');
 let chdate = document.querySelectorAll('#calendar table tr td span');
 let datetext = document.getElementById('datetext');
 
+
+//日期圖示監聽
 calendarBtn.addEventListener('click', () => {
     calendar.classList.remove('hidden');
     allContent.classList.add('blur');
     mask.classList.add('mask');
 })
 
+//遮罩監聽
 mask.addEventListener('click', () => {
     calendar.classList.add('hidden');
     allContent.classList.remove('blur');
     mask.classList.remove('mask');
 })
 
+
+//變換日期
 let date = chdate[0].innerHTML;
 datetext.innerHTML = '05/' + date;
 
@@ -37,20 +42,20 @@ for (i = 0; i <= 3; i++) {
     })(i);
 }
 
+
 // 金額按鈕變化
 let btnsPrice = document.querySelectorAll('.btnsPrice');
-for (let i = 0; i <= 2; i++) {
-    btnsPrice[i].addEventListener('click', () => {
-        btnsPrice[i].classList.add('btnVisited');
-        if (i == 0) {
-            btnsPrice[1].classList.remove('btnVisited');
-            btnsPrice[2].classList.remove('btnVisited');
-        }else if(i == 1){
-            btnsPrice[0].classList.remove('btnVisited');
-            btnsPrice[2].classList.remove('btnVisited');
-        }else{
-            btnsPrice[0].classList.remove('btnVisited');
-            btnsPrice[1].classList.remove('btnVisited');
-        }
+btnsPrice.forEach((price,index)=>{
+        price.addEventListener('click',function(){
+            removeClass()
+            this.classList.add('btnVisited');
+        })
     })
+
+
+//清除類別
+function removeClass(){
+btnsPrice.forEach((v)=>{
+    v.classList.remove('btnVisited')
+})
 }
