@@ -36,8 +36,28 @@ function clearClassName(){
 }
 
   
-            
-        
+  //購買數量
+  let groupbtn=document.querySelectorAll('.btn-group button');
+  let count=0
+  
+  groupbtn[1].innerHTML=0;      
+
+  groupbtn[0].addEventListener('click',function(){
+        count--
+        groupbtn[1].innerHTML=count;
+        if(count==0){
+          groupbtn[0].disabled=true; 
+        }
+  })
+ 
+  groupbtn[2].addEventListener('click',function(){
+        count++
+        groupbtn[1].innerHTML=count;
+        if(count>=1){
+          groupbtn[0].disabled=false; 
+        }
+  })
+             
             
            
 
