@@ -1,43 +1,47 @@
 const Picimg=document.querySelectorAll(".Picimg");
+Picimg.style='width:1000px'
 
-
-for(let i=0 ;i<Picimg.length;i++){
-  Picimg[i].addEventListener('click',function(){
-    
+Picimg.forEach((pic,index)=>{
+   
+    pic.addEventListener('click',function(){
+      
       const imgsrc=this.getAttribute('src');
-      Picimg[0].src=imgsrc;
-     
-      let index=i;
-   
-   
-      if(Picimg[index]!=Picimg[0] ) {
-          Picimg[i].classList.add('inputOp');
-       }
+      if(index){
+      clearClassName();
+      this.className='img-fluid Picimg inputOp'  
+      
+      setTimeout(()=>{
+        this.ownerDocument.images[5].src=imgsrc;  
+        this.ownerDocument.images[5].style=`opacity:1;transition:0.1s` ;     
        
-    if(Picimg[index].classList.contains('inputOp')){
-          if(index==1){ 
-            // Picimg[0].classList.add('fadeInOut')
-            // setTimeout(()=>{ Picimg[0].classList.remove('fadeInOut')},500);
-            Picimg[index+1].classList.remove('inputOp')
-            Picimg[index+2].classList.remove('inputOp')
-           }
+      },100);
+        
 
-           if(index==2){
-             Picimg[index-1].classList.remove('inputOp');
-             Picimg[index+1].classList.remove('inputOp');
-              
-           }
-               
-           if(index==3){
-             Picimg[index-1].classList.remove('inputOp');
-             Picimg[index-2].classList.remove('inputOp');
-            }
-          }
-          
-        });
-        }
-               
+      // setInterval(()=>{
+      //   for(let i=0;i<=1;i+=0.01){
+      //   this.ownerDocument.images[5].style=`opacity:${i};`
+      // }
+      // },1000)  
+    
+      
+      
+   }
+    })
+})
+  
+function clearClassName(){ 
+ 
+  Picimg.forEach((pic,index)=>{
+        if(!index){
+        pic.style='opacity:0;transition:0.1s';
+      }
+        pic.className='img-fluid Picimg';
+  })
+}
+
+
          
+
   
             
         
