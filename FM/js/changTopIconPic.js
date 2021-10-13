@@ -10,13 +10,13 @@ for (var i = 0; i < iconImage.length; i++) {
       switch (this.num) {
          case 0:
 
-            this.src = '../images/index/LogoIcon/m';
+            this.src = 'images/index/LogoIcon/會員中心02.png';
             break;
          case 1:
-            this.src = '../images/index/LogoIcon/常見問題02.png';
+            this.src = 'images/index/LogoIcon/常見問題02.png';
             break;
          case 2:
-            this.src = '../images/index/LogoIcon/購物車02.png';
+            this.src = 'images/index/LogoIcon/購物車02.png';
             break;
          // case 3:
          //    this.src = '../images/index/LogoIcon/搜尋02.png';
@@ -30,13 +30,13 @@ for (var i = 0; i < iconImage.length; i++) {
       switch (this.num) {
          case 0:
 
-            this.src = '../images/index/LogoIcon/memberOne.png';
+            this.src = 'images/index/LogoIcon/會員中心01.png';
             break;
          case 1:
-            this.src = '../images/index/LogoIcon/常見問題01.png';
+            this.src = 'images/index/LogoIcon/常見問題01.png';
             break;
          case 2:
-            this.src = '../images/index/LogoIcon/購物車01.png';
+            this.src = 'images/index/LogoIcon/購物車01.png';
             break;
          // case 3:
          //    this.src = '../images/index/LogoIcon/搜尋01.png';
