@@ -45,7 +45,7 @@ for (i = 0; i <= 3; i++) {
 
 // 金額按鈕變化
 let btnsPrice = document.querySelectorAll('.btnsPrice');
-btnsPrice.forEach((price,index)=>{
+btnsPrice.forEach((price)=>{
         price.addEventListener('click',function(){
             removeClass()
             this.classList.add('btnVisited');
