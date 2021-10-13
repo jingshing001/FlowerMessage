@@ -79,6 +79,7 @@
   }
 
   #gallery {
+ 
     margin-top: 100px;
   }
 
@@ -121,6 +122,13 @@
     left: 20px;
     transform: rotate(90deg);
   }
+
+  #gallery {
+    display: none;
+   
+  }
+
+
 }
 
   

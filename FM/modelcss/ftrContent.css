@@ -102,8 +102,13 @@ footer {
   @media screen and (max-width: 765px) {
 
 /* footer */
+#ftr{
+    margin-top: 100px;
+}
+
 .ftr-container {
     flex-direction: column;
+
   }
 
   .ftr-content-inner {
