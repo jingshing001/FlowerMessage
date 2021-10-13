@@ -1,11 +1,15 @@
 const Picimg=document.querySelectorAll(".Picimg");
-Picimg.style='width:1000px'
 
+
+
+//綁定監聽
 Picimg.forEach((pic,index)=>{
    
     pic.addEventListener('click',function(){
       
       const imgsrc=this.getAttribute('src');
+      
+      //圖片是小圖進入執行
       if(index){
       clearClassName();
       this.className='img-fluid Picimg inputOp'  
@@ -15,20 +19,12 @@ Picimg.forEach((pic,index)=>{
         this.ownerDocument.images[5].style=`opacity:1;transition:0.1s` ;     
        
       },100);
-        
-
-      // setInterval(()=>{
-      //   for(let i=0;i<=1;i+=0.01){
-      //   this.ownerDocument.images[5].style=`opacity:${i};`
-      // }
-      // },1000)  
-    
-      
       
    }
     })
 })
-  
+
+//清除類別名
 function clearClassName(){ 
  
   Picimg.forEach((pic,index)=>{
@@ -38,9 +34,6 @@ function clearClassName(){
         pic.className='img-fluid Picimg';
   })
 }
-
-
-         
 
   
             
