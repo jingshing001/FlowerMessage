@@ -12,19 +12,19 @@ checkbox.addEventListener('change', () => {
    changeColor.classList.toggle("changeFci");
 
    if (changeColor.classList.contains("dark")) {
-      logo1.src = "../images/index/LogoIcon/logo-w.png";
-      questionImg.src = "../images/index/LogoIcon/常見問題02.png";
-      ftIcon01.src="../images/index/LogoIcon/w-fb.png"
-      ftIcon02.src="../images/index/LogoIcon/w-ig.png"
-      ftIcon03.src="../images/index/LogoIcon/w-twitter.png"
+      logo1.src = "images/index/LogoIcon/logo-w.png";
+      questionImg.src = "images/index/LogoIcon/常見問題02.png";
+      ftIcon01.src="images/index/LogoIcon/w-fb.png"
+      ftIcon02.src="images/index/LogoIcon/w-ig.png"
+      ftIcon03.src="images/index/LogoIcon/w-twitter.png"
     
       
    } else {
-      logo1.src = "../images/index/LogoIcon/logo-b.png";
-      questionImg.src = "../images/index/LogoIcon/常見問題01.png";
-      ftIcon01.src="../images/index/LogoIcon/b-fb.png"
-      ftIcon02.src="../images/index/LogoIcon/b-ig.png"
-      ftIcon03.src="../images/index/LogoIcon/b-twitter.png"
+      logo1.src = "images/index/LogoIcon/logo-b.png";
+      questionImg.src = "images/index/LogoIcon/常見問題01.png";
+      ftIcon01.src="images/index/LogoIcon/b-fb.png"
+      ftIcon02.src="images/index/LogoIcon/b-ig.png"
+      ftIcon03.src="images/index/LogoIcon/b-twitter.png"
   
    }
 })
