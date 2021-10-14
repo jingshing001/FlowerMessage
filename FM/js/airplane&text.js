@@ -10,7 +10,6 @@ document.addEventListener('scroll', (e) => {
          timer+=200;
            setTimeout(()=>{
             v.classList.add('textenter')
-           console.log(timer)
            },timer)
          })
 
