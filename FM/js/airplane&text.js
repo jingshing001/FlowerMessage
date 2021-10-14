@@ -4,7 +4,7 @@ let  aboutSpan = document.querySelectorAll('#aboutcontent span');
 //滾輪監聽
 document.addEventListener('scroll', (e) => {
    let top = document.documentElement.scrollTop;
-   if (top >600) {
+   if (top >300) {
          let timer=0;
       aboutSpan.forEach((v)=>{ 
          timer+=200;
